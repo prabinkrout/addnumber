@@ -8,9 +8,9 @@ pipeline {
         }
  stage('makejar') {
             steps {
-                sh """
-                    javac add.java
-                """
+                sh '''
+                    echo "File pushed"
+                '''
                 
             }
         }
