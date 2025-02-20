@@ -6,10 +6,5 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/prabinkrout/addnumber.git'
             }
         }
-        stage('Build') {
-            steps {
-                sh 'hello'
-            }
-        }
     }
 }
