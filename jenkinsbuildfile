@@ -10,6 +10,9 @@ pipeline {
             steps {
                 sh '''
                     echo "File pushed"
+                    ls -l
+                    java add.java
+
                 '''
                 
             }
