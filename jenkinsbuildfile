@@ -6,5 +6,10 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/prabinkrout/addnumber.git'
             }
         }
+ stage('makejar') {
+            steps {
+                git branch: 'master', url: 'https://github.com/prabinkrout/addnumber.git'
+            }
+        }
     }
 }
