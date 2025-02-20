@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/prabinkrout/addnumber'
+                git branch: 'main', url: 'https://github.com/prabinkrout/addnumber.git'
             }
         }
         stage('Build') {
             steps {
-                sh 'make build'
+                sh 'hello'
             }
         }
     }
