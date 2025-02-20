@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/prabinkrout/addnumber'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'make build'
+            }
+        }
+    }
+}
