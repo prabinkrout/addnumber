@@ -6,6 +6,7 @@ public class add
 		int j=20;
 		int r=i+j;
 		System.out.println(r);
+		System.out.println(r);
 	}
 
 
