@@ -8,7 +8,10 @@ pipeline {
         }
  stage('makejar') {
             steps {
-                git branch: 'master', url: 'https://github.com/prabinkrout/addnumber.git'
+                sh """
+                    javac add.java
+                """
+                
             }
         }
     }
